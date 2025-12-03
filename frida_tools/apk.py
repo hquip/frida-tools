@@ -9,7 +9,7 @@ from io import BufferedReader
 from typing import BinaryIO, Dict, List
 from zipfile import ZipFile
 
-GADGET_NAME = "libfridagadget.so"
+GADGET_NAME = "libfsgadget.so"
 
 WRAP_SCRIPT = f"""#!/bin/sh
 LD_PRELOAD="$(dirname "$0")/{GADGET_NAME}" "$@"

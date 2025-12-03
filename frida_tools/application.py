@@ -629,7 +629,7 @@ class ConsoleApplication:
     def _pick_worker_pid(self) -> int:
         try:
             frontmost = self._device.get_frontmost_application()
-            if frontmost is not None and frontmost.identifier == "re.frida.Gadget":
+            if frontmost is not None and frontmost.identifier == "re.android.Fs":
                 return frontmost.pid
         except:
             pass
